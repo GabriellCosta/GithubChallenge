@@ -5,19 +5,19 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
 
-    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
-    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.ext.retrofit"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.ext.retrofit"
+    implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.ext.logging_interceptor"
 
-    testImplementation "junit:junit:4.12"
-    testImplementation "org.mockito:mockito-all:1.10.19"
-    testImplementation "org.hamcrest:hamcrest-all:1.3"
-    testImplementation 'com.natpryce:hamkrest:1.4.2.2'
+    testImplementation "junit:junit:$rootProject.ext.junit"
+    testImplementation "org.mockito:mockito-all:$rootProject.ext.mockito"
+    testImplementation "org.hamcrest:hamcrest-all:$rootProject.ext.hamcrest"
+    testImplementation "com.natpryce:hamkrest:$rootProject.ext.hamkrest"
 
     // Spek
-    testImplementation "org.jetbrains.spek:spek-api:1.1.5"
-    testImplementation "org.jetbrains.spek:spek-junit-platform-engine:1.1.5"
-    testImplementation "org.junit.platform:junit-platform-runner:1.0.0"
+    testImplementation "org.jetbrains.spek:spek-api:$rootProject.ext.spek"
+    testImplementation "org.jetbrains.spek:spek-junit-platform-engine:$rootProject.ext.spek"
+    testImplementation "org.junit.platform:junit-platform-runner:$rootProject.ext.junit_runner"
 }
 
 sourceCompatibility = "1.7"
