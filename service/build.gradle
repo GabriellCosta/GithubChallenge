@@ -8,11 +8,13 @@ dependencies {
     implementation "com.squareup.retrofit2:retrofit:$rootProject.ext.retrofit"
     implementation "com.squareup.retrofit2:converter-gson:$rootProject.ext.retrofit"
     implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.ext.logging_interceptor"
+    testImplementation "com.squareup.retrofit2:retrofit-mock:$rootProject.ext.retrofit_mock"
 
     testImplementation "junit:junit:$rootProject.ext.junit"
     testImplementation "org.mockito:mockito-all:$rootProject.ext.mockito"
     testImplementation "org.hamcrest:hamcrest-all:$rootProject.ext.hamcrest"
     testImplementation "com.natpryce:hamkrest:$rootProject.ext.hamkrest"
+    testImplementation "com.nhaarman:mockito-kotlin:$rootProject.ext.mockito_kotlin"
 
     // Spek
     testImplementation "org.jetbrains.spek:spek-api:$rootProject.ext.spek"

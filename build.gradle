@@ -28,11 +28,13 @@ task clean(type: Delete) {
 
 ext {
     retrofit = '2.3.0'
+    retrofit_mock = '2.0.2'
     logging_interceptor = '3.9.1'
     junit = '4.12'
     spek = '1.1.5'
     junit_runner = '1.0.0'
     mockito = '1.10.19'
+    mockito_kotlin = '1.5.0'
     hamcrest = '1.3'
     hamkrest = '1.4.2.2'
 }
