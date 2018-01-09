@@ -1,0 +1,306 @@
+{
+  "total_count": 670994,
+  "incomplete_results": false,
+  "items": [
+    {
+      "name": "javascript",
+      "description": "JavaScript Style Guide",
+      "forks": 12352,
+      "stargazers_count": 64007,
+      "owner": {
+        "avatar_url": "https://avatars3.githubusercontent.com/u/698437?v\u003d4",
+        "login": "airbnb"
+      }
+    },
+    {
+      "name": "RxJava",
+      "description": "RxJava – Reactive Extensions for the JVM – a library for composing asynchronous and event-based programs using observable sequences for the Java VM.",
+      "forks": 5297,
+      "stargazers_count": 29992,
+      "owner": {
+        "avatar_url": "https://avatars1.githubusercontent.com/u/6407041?v\u003d4",
+        "login": "ReactiveX"
+      }
+    },
+    {
+      "name": "java-design-patterns",
+      "description": "Design patterns implemented in Java",
+      "forks": 9089,
+      "stargazers_count": 28222,
+      "owner": {
+        "avatar_url": "https://avatars1.githubusercontent.com/u/582346?v\u003d4",
+        "login": "iluwatar"
+      }
+    },
+    {
+      "name": "jQuery-File-Upload",
+      "description": "File Upload widget with multiple file selection, drag\u0026drop support, progress bar, validation and preview images, audio and video for jQuery. Supports cross-domain, chunked and resumable file uploads. Works with any server-side platform (Google App Engine, PHP, Python, Ruby on Rails, Java, etc.) that supports standard HTML form file uploads.",
+      "forks": 7606,
+      "stargazers_count": 28119,
+      "owner": {
+        "avatar_url": "https://avatars2.githubusercontent.com/u/244586?v\u003d4",
+        "login": "blueimp"
+      }
+    },
+    {
+      "name": "elasticsearch",
+      "description": "Open Source, Distributed, RESTful Search Engine",
+      "forks": 9730,
+      "stargazers_count": 27839,
+      "owner": {
+        "avatar_url": "https://avatars0.githubusercontent.com/u/6764390?v\u003d4",
+        "login": "elastic"
+      }
+    },
+    {
+      "name": "retrofit",
+      "description": "Type-safe HTTP client for Android and Java by Square, Inc.",
+      "forks": 5120,
+      "stargazers_count": 25745,
+      "owner": {
+        "avatar_url": "https://avatars0.githubusercontent.com/u/82592?v\u003d4",
+        "login": "square"
+      }
+    },
+    {
+      "name": "okhttp",
+      "description": "An HTTP+HTTP/2 client for Android and Java applications.",
+      "forks": 5769,
+      "stargazers_count": 24407,
+      "owner": {
+        "avatar_url": "https://avatars0.githubusercontent.com/u/82592?v\u003d4",
+        "login": "square"
+      }
+    },
+    {
+      "name": "guava",
+      "description": "Google core libraries for Java",
+      "forks": 4976,
+      "stargazers_count": 21362,
+      "owner": {
+        "avatar_url": "https://avatars1.githubusercontent.com/u/1342004?v\u003d4",
+        "login": "google"
+      }
+    },
+    {
+      "name": "leakcanary",
+      "description": "A memory leak detection library for Android and Java.",
+      "forks": 2951,
+      "stargazers_count": 18075,
+      "owner": {
+        "avatar_url": "https://avatars0.githubusercontent.com/u/82592?v\u003d4",
+        "login": "square"
+      }
+    },
+    {
+      "name": "interviews",
+      "description": "Everything you need to know to get the job.",
+      "forks": 2554,
+      "stargazers_count": 17039,
+      "owner": {
+        "avatar_url": "https://avatars1.githubusercontent.com/u/16903644?v\u003d4",
+        "login": "kdn251"
+      }
+    },
+    {
+      "name": "zxing",
+      "description": "ZXing (\"Zebra Crossing\") barcode scanning library for Java, Android",
+      "forks": 7113,
+      "stargazers_count": 16977,
+      "owner": {
+        "avatar_url": "https://avatars1.githubusercontent.com/u/1122572?v\u003d4",
+        "login": "zxing"
+      }
+    },
+    {
+      "name": "EventBus",
+      "description": "Event bus for Android and Java that simplifies communication between Activities, Fragments, Threads, Services, etc. Less code, better quality.",
+      "forks": 3895,
+      "stargazers_count": 16972,
+      "owner": {
+        "avatar_url": "https://avatars0.githubusercontent.com/u/242242?v\u003d4",
+        "login": "greenrobot"
+      }
+    },
+    {
+      "name": "clean-code-javascript",
+      "description": ":bathtub: Clean Code concepts adapted for JavaScript",
+      "forks": 1647,
+      "stargazers_count": 16937,
+      "owner": {
+        "avatar_url": "https://avatars1.githubusercontent.com/u/5114666?v\u003d4",
+        "login": "ryanmcdermott"
+      }
+    },
+    {
+      "name": "dubbo",
+      "description": "Dubbo is a high-performance, java based, open source RPC framework",
+      "forks": 11576,
+      "stargazers_count": 15261,
+      "owner": {
+        "avatar_url": "https://avatars1.githubusercontent.com/u/1961952?v\u003d4",
+        "login": "alibaba"
+      }
+    },
+    {
+      "name": "awesome-java",
+      "description": "A curated list of awesome frameworks, libraries and software for the Java programming language.",
+      "forks": 3618,
+      "stargazers_count": 15235,
+      "owner": {
+        "avatar_url": "https://avatars3.githubusercontent.com/u/4538351?v\u003d4",
+        "login": "akullpp"
+      }
+    },
+    {
+      "name": "jadx",
+      "description": "Dex to Java decompiler",
+      "forks": 1197,
+      "stargazers_count": 13573,
+      "owner": {
+        "avatar_url": "https://avatars3.githubusercontent.com/u/118523?v\u003d4",
+        "login": "skylot"
+      }
+    },
+    {
+      "name": "CNTK",
+      "description": "Microsoft Cognitive Toolkit (CNTK), an open source deep-learning toolkit",
+      "forks": 3540,
+      "stargazers_count": 13538,
+      "owner": {
+        "avatar_url": "https://avatars2.githubusercontent.com/u/6154722?v\u003d4",
+        "login": "Microsoft"
+      }
+    },
+    {
+      "name": "libgdx",
+      "description": "Desktop/Android/HTML5/iOS Java game development framework",
+      "forks": 5544,
+      "stargazers_count": 13190,
+      "owner": {
+        "avatar_url": "https://avatars1.githubusercontent.com/u/509841?v\u003d4",
+        "login": "libgdx"
+      }
+    },
+    {
+      "name": "awesome-javascript",
+      "description": "🐢 A collection of awesome browser-side  JavaScript libraries, resources and shiny things.",
+      "forks": 1808,
+      "stargazers_count": 13035,
+      "owner": {
+        "avatar_url": "https://avatars1.githubusercontent.com/u/35128?v\u003d4",
+        "login": "sorrycc"
+      }
+    },
+    {
+      "name": "fastjson",
+      "description": ":bullettrain_side: A fast JSON parser/generator for Java",
+      "forks": 3897,
+      "stargazers_count": 12186,
+      "owner": {
+        "avatar_url": "https://avatars1.githubusercontent.com/u/1961952?v\u003d4",
+        "login": "alibaba"
+      }
+    },
+    {
+      "name": "gson",
+      "description": "A Java serialization/deserialization library to convert Java Objects into JSON and back",
+      "forks": 2430,
+      "stargazers_count": 11316,
+      "owner": {
+        "avatar_url": "https://avatars1.githubusercontent.com/u/1342004?v\u003d4",
+        "login": "google"
+      }
+    },
+    {
+      "name": "ResumeSample",
+      "description": "Resume template for Chinese programmers . 程序员简历模板系列。包括PHP程序员简历模板、iOS程序员简历模板、Android程序员简历模板、Web前端程序员简历模板、Java程序员简历模板、C/C++程序员简历模板、NodeJS程序员简历模板、架构师简历模板以及通用程序员简历模板",
+      "forks": 4379,
+      "stargazers_count": 10823,
+      "owner": {
+        "avatar_url": "https://avatars1.githubusercontent.com/u/7380510?v\u003d4",
+        "login": "geekcompany"
+      }
+    },
+    {
+      "name": "Android-CleanArchitecture",
+      "description": "This is a sample app that is part of a series of blog posts I have written about how to architect an android application using Uncle Bob\u0027s clean architecture approach.",
+      "forks": 2608,
+      "stargazers_count": 10670,
+      "owner": {
+        "avatar_url": "https://avatars0.githubusercontent.com/u/1360604?v\u003d4",
+        "login": "android10"
+      }
+    },
+    {
+      "name": "xgboost",
+      "description": "Scalable, Portable and Distributed Gradient Boosting (GBDT, GBRT or GBM) Library,  for Python, R, Java, Scala, C++ and more. Runs on single machine, Hadoop, Spark, Flink and DataFlow",
+      "forks": 4828,
+      "stargazers_count": 10295,
+      "owner": {
+        "avatar_url": "https://avatars2.githubusercontent.com/u/11508361?v\u003d4",
+        "login": "dmlc"
+      }
+    },
+    {
+      "name": "playframework",
+      "description": "Play Framework",
+      "forks": 3446,
+      "stargazers_count": 10072,
+      "owner": {
+        "avatar_url": "https://avatars0.githubusercontent.com/u/319107?v\u003d4",
+        "login": "playframework"
+      }
+    },
+    {
+      "name": "WebViewJavascriptBridge",
+      "description": "An iOS/OSX bridge for sending messages between Obj-C and JavaScript in UIWebViews/WebViews",
+      "forks": 2285,
+      "stargazers_count": 10024,
+      "owner": {
+        "avatar_url": "https://avatars0.githubusercontent.com/u/131967?v\u003d4",
+        "login": "marcuswestin"
+      }
+    },
+    {
+      "name": "You-Dont-Need-JavaScript",
+      "description": "CSS is powerful, you can do a lot of things without JS.",
+      "forks": 560,
+      "stargazers_count": 9621,
+      "owner": {
+        "avatar_url": "https://avatars1.githubusercontent.com/u/21141794?v\u003d4",
+        "login": "you-dont-need"
+      }
+    },
+    {
+      "name": "generator-jhipster",
+      "description": "Open Source application generator for creating Spring Boot + Angular projects in seconds!",
+      "forks": 2046,
+      "stargazers_count": 9082,
+      "owner": {
+        "avatar_url": "https://avatars3.githubusercontent.com/u/6059488?v\u003d4",
+        "login": "jhipster"
+      }
+    },
+    {
+      "name": "selenium",
+      "description": "A browser automation framework and ecosystem.",
+      "forks": 3542,
+      "stargazers_count": 8990,
+      "owner": {
+        "avatar_url": "https://avatars2.githubusercontent.com/u/983927?v\u003d4",
+        "login": "SeleniumHQ"
+      }
+    },
+    {
+      "name": "realm-java",
+      "description": "Realm is a mobile database: a replacement for SQLite \u0026 ORMs",
+      "forks": 1421,
+      "stargazers_count": 8978,
+      "owner": {
+        "avatar_url": "https://avatars0.githubusercontent.com/u/7575099?v\u003d4",
+        "login": "realm"
+      }
+    }
+  ]
+}
