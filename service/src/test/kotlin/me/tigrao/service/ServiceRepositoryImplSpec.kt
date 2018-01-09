@@ -13,7 +13,7 @@ import retrofit2.mock.MockRetrofit
 class ServiceRepositoryImplSpec: Spek({
 
     given("a ServiceRespository implementation") {
-        val repositorieDTO = mock<RepositorieDTO>()
+        val repositorieDTO = readFile("repositories_page_1.json", RepositorieDTO::class.java)
         val observer = mock<Observer<RepositorieDTO>>()
         val build = RetrofitBuilder.build("http://api.github.com")
         val build1 = MockRetrofit.Builder(build)
