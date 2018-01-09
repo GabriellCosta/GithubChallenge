@@ -6,11 +6,12 @@ android {
     defaultConfig {
         minSdkVersion 16
     }
-}
 
-sourceSets {
-    main.java.srcDirs += 'src/main/kotlin'
-    test.java.srcDirs += 'src/main/kotlin'
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+        test.java.srcDirs += 'src/test/kotlin'
+    }
+
 }
 
 dependencies {
