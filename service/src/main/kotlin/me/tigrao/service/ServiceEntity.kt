@@ -23,3 +23,6 @@ data class RepositorieVO(@SerializedName("name") val name: String,
 data class RepositoryRequest(var language: String,
                               var sort: String,
                               var page: Int)
+
+data class PullRequestRequest(var user: String,
+                              var repository: String)
