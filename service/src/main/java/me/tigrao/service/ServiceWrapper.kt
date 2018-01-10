@@ -6,7 +6,7 @@ import retrofit2.Callback
 import retrofit2.Response
 
 
-class ServiceWrapper internal constructor(private val api: ServiceEndpoint) {
+internal class ServiceWrapper constructor(private val api: ServiceEndpoint) {
 
     lateinit var valueObserver: MutableLiveData<RepositorieDTO>
     lateinit var errorObserver: MutableLiveData<String>
