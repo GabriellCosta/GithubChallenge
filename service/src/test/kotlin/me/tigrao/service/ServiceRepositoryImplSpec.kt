@@ -16,12 +16,13 @@ class ServiceRepositoryImplSpec: Spek({
         val observer = mock<Observer<RepositorieDTO>>()
         val serviceWrapper = mock<ServiceWrapper>()
         val newInstance = ServiceRepositoryImpl(serviceWrapper)
-        Mockito.`when`(serviceWrapper.search("java", "stars", 1)).then {
+        val mock = mock<RepositoryRequest>()
+        Mockito.`when`(serviceWrapper.search(mock)).then {
             observer.onChanged(repositorieDTO)
         }
 
         on("repositorie fetch") {
-            newInstance.fetchRepositories("java", "stars", 1)
+            newInstance.fetchRepositories(mock)
                     .observeForever(observer)
 
             it("should observe the correct value") {

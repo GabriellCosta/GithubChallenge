@@ -5,7 +5,7 @@ import android.arch.lifecycle.MutableLiveData
 
 interface ServiceRepository {
 
-    fun fetchRepositories(language: String, sort: String, page: Int): LiveData<RepositorieDTO>
+    fun fetchRepositories(repositoryRequest: RepositoryRequest): LiveData<RepositorieDTO>
 
     fun fetchPullRequest(user: String, repositoy: String)
 
@@ -34,8 +34,8 @@ class ServiceRepositoryImpl internal constructor(private val serviceWrapper: Ser
         }
     }
 
-    override fun fetchRepositories(language: String, sort: String, page: Int): LiveData<RepositorieDTO> {
-        serviceWrapper.search(language, sort, page)
+    override fun fetchRepositories(repositoryRequest: RepositoryRequest): LiveData<RepositorieDTO> {
+        serviceWrapper.search(repositoryRequest)
         return valueObserver
     }
 

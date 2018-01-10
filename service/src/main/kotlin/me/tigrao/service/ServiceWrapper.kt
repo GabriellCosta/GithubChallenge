@@ -11,8 +11,9 @@ internal class ServiceWrapper constructor(private val api: ServiceEndpoint) {
     lateinit var valueObserver: MutableLiveData<RepositorieDTO>
     lateinit var errorObserver: MutableLiveData<String>
 
-    fun search(language: String, sort: String, page: Int) {
-        api.search(language, sort, page).enqueue(object : InnerCallback<RepositorieDTO>() {
+    fun search(repositoryRequest: RepositoryRequest) {
+        api.search(repositoryRequest.language, repositoryRequest.sort, repositoryRequest.page)
+                .enqueue(object : InnerCallback<RepositorieDTO>() {
 
             override fun onResponse(call: Call<RepositorieDTO>, response: Response<RepositorieDTO>) {
                 EnqueueHandler(valueObserver, errorObserver).handler(response)

@@ -19,3 +19,7 @@ data class RepositorieVO(@SerializedName("name") val name: String,
                          @SerializedName("forks") val forks: Int,
                          @SerializedName("stargazers_count") val starts: Int,
                          @SerializedName("owner") val owner: OwnerVO)
+
+data class RepositoryRequest(var language: String,
+                              var sort: String,
+                              var page: Int)
