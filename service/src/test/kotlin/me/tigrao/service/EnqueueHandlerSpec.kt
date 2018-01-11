@@ -1,12 +1,12 @@
 package me.tigrao.service
 
+import com.nhaarman.mockito_kotlin.doReturn
 import com.nhaarman.mockito_kotlin.mock
 import com.nhaarman.mockito_kotlin.verify
 import org.jetbrains.spek.api.Spek
 import org.jetbrains.spek.api.dsl.given
 import org.jetbrains.spek.api.dsl.it
 import org.jetbrains.spek.api.dsl.on
-import org.mockito.Mockito.`when`
 import retrofit2.Response
 
 class EnqueueHandlerSpec : Spek({
@@ -16,11 +16,12 @@ class EnqueueHandlerSpec : Spek({
         val success = mock<Function1<String, Unit>>()
         val error = mock<Function1<String, Unit>>()
         val enqueueHandler = EnqueueHandler(success, error)
-        val mockResponse = mock<Response<String>>()
 
         on("handler a success enqueue") {
-            `when`(mockResponse.isSuccessful).thenReturn(true)
-            `when`(mockResponse.body()).thenReturn("teste")
+            val mockResponse = mock<Response<String>> {
+                on { isSuccessful } doReturn true
+                on { body() } doReturn "teste"
+            }
             enqueueHandler.handler(mockResponse)
 
             it("should set his value on observer") {
@@ -29,7 +30,9 @@ class EnqueueHandlerSpec : Spek({
         }
 
         on("handler a fail enqueue") {
-            `when`(mockResponse.isSuccessful).thenReturn(false)
+            val mockResponse = mock<Response<String>> {
+                on { isSuccessful } doReturn false
+            }
             enqueueHandler.handler(mockResponse)
 
             it("should set the error on errorObserver") {
