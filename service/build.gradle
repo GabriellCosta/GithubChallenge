@@ -1,0 +1,41 @@
+//TODO:CHANGE PLUGIN TO JAVA AND KOTLIN PLUGINS
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        minSdkVersion 16
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+        test.java.srcDirs += 'src/test/kotlin'
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.ext.retrofit"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.ext.retrofit"
+    implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.ext.logging_interceptor"
+    testImplementation "com.squareup.retrofit2:retrofit-mock:$rootProject.ext.retrofit_mock"
+
+    testImplementation "junit:junit:$rootProject.ext.junit"
+    testImplementation "org.mockito:mockito-all:$rootProject.ext.mockito"
+    testImplementation "org.hamcrest:hamcrest-all:$rootProject.ext.hamcrest"
+    testImplementation "com.natpryce:hamkrest:$rootProject.ext.hamkrest"
+    testImplementation "com.nhaarman:mockito-kotlin:$rootProject.ext.mockito_kotlin"
+
+    // Spek
+    testImplementation "org.jetbrains.spek:spek-api:$rootProject.ext.spek"
+    testImplementation "org.jetbrains.spek:spek-junit-platform-engine:$rootProject.ext.spek"
+    testImplementation "org.junit.platform:junit-platform-runner:$rootProject.ext.junit_runner"
+
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
