@@ -24,7 +24,7 @@ class EnqueueHandlerSpec : Spek({
             }
             enqueueHandler.handler(mockResponse)
 
-            it("should set his value on observer") {
+            it("should set his value on sucesso function") {
                 verify(success)("teste")
             }
         }
@@ -35,7 +35,7 @@ class EnqueueHandlerSpec : Spek({
             }
             enqueueHandler.handler(mockResponse)
 
-            it("should set the error on errorObserver") {
+            it("should set the error on error function") {
                 verify(error)(EnqueueHandler.ERROR_MESSAGE)
             }
 
