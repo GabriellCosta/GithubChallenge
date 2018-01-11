@@ -10,9 +10,9 @@ data class PullRequestVO(@SerializedName("title") val title: String,
                          @SerializedName("created_at") val createdAt: String,
                          @SerializedName("user") val user: OwnerVO)
 
-data class RepositorieDTO(@SerializedName("total_count") val totalCount: Int,
-                          @SerializedName("incomplete_results") val incompleteResult: Boolean,
-                          @SerializedName("items") val items: List<RepositorieVO>)
+data class RepositoryDTO(@SerializedName("total_count") val totalCount: Int,
+                         @SerializedName("incomplete_results") val incompleteResult: Boolean,
+                         @SerializedName("items") val items: List<RepositorieVO>)
 
 data class RepositorieVO(@SerializedName("name") val name: String,
                          @SerializedName("description") val description: String,

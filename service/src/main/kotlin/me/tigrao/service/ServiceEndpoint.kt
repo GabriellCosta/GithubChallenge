@@ -10,7 +10,7 @@ internal interface ServiceEndpoint {
     @GET("search/repositories")
     fun search(@Query("q") language: String,
                @Query("sort") sort: String,
-               @Query("page") page: Int): Call<RepositorieDTO>
+               @Query("page") page: Int): Call<RepositoryDTO>
 
     @GET("repos/{user}/{repo}/pulls")
     fun fetchPullRequests(@Path("user") user: String,

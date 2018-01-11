@@ -2,7 +2,7 @@ package me.tigrao.service
 
 interface ServiceRepository {
 
-    fun fetchRepositories(repositoryRequest: RepositoryRequest, enqueueHandler: EnqueueHandler<RepositorieDTO>)
+    fun fetchRepositories(repositoryRequest: RepositoryRequest, enqueueHandler: EnqueueHandler<RepositoryDTO>)
 
     fun fetchPullRequest(pullRequestRequest: PullRequestRequest, enqueueHandler: EnqueueHandler<List<PullRequestVO>>)
 
@@ -24,7 +24,7 @@ class ServiceRepositoryImpl internal constructor(private val serviceWrapper: Ser
     }
 
     override fun fetchRepositories(repositoryRequest: RepositoryRequest,
-                                   enqueueHandler: EnqueueHandler<RepositorieDTO>) {
+                                   enqueueHandler: EnqueueHandler<RepositoryDTO>) {
         serviceWrapper.search(repositoryRequest, enqueueHandler)
     }
 

@@ -15,7 +15,7 @@ class ServiceRepositoryImplSpec : Spek({
 
         on("repository fetch") {
             val repositoryRequest = mock<RepositoryRequest>()
-            val enqueueHandler = mock<EnqueueHandler<RepositorieDTO>>()
+            val enqueueHandler = mock<EnqueueHandler<RepositoryDTO>>()
             newInstance.fetchRepositories(repositoryRequest, enqueueHandler)
 
             it("should call correct service wrapper method") {
