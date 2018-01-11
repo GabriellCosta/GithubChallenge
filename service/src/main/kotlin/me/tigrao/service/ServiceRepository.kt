@@ -1,27 +1,16 @@
 package me.tigrao.service
 
-import android.arch.lifecycle.LiveData
-import android.arch.lifecycle.MutableLiveData
-
 interface ServiceRepository {
 
-    fun fetchRepositories(repositoryRequest: RepositoryRequest): LiveData<RepositorieDTO>
+    fun fetchRepositories(repositoryRequest: RepositoryRequest, enqueueHandler: EnqueueHandler<RepositorieDTO>)
 
-    fun fetchPullRequest(user: String, repositoy: String)
+    fun fetchPullRequest(pullRequestRequest: PullRequestRequest, enqueueHandler: EnqueueHandler<List<PullRequestVO>>)
 
 }
 
 
 class ServiceRepositoryImpl internal constructor(private val serviceWrapper: ServiceWrapper):
         ServiceRepository {
-
-    private val valueObserver: MutableLiveData<RepositorieDTO> = MutableLiveData()
-    private val errorObserver: MutableLiveData<String> = MutableLiveData()
-
-    init {
-        serviceWrapper.errorObserver = errorObserver
-        serviceWrapper.valueObserver = valueObserver
-    }
 
     companion object {
 
@@ -34,13 +23,14 @@ class ServiceRepositoryImpl internal constructor(private val serviceWrapper: Ser
         }
     }
 
-    override fun fetchRepositories(repositoryRequest: RepositoryRequest): LiveData<RepositorieDTO> {
-        serviceWrapper.search(repositoryRequest)
-        return valueObserver
+    override fun fetchRepositories(repositoryRequest: RepositoryRequest,
+                                   enqueueHandler: EnqueueHandler<RepositorieDTO>) {
+        serviceWrapper.search(repositoryRequest, enqueueHandler)
     }
 
-    override fun fetchPullRequest(user: String, repository: String) {
-
+    override fun fetchPullRequest(pullRequestRequest: PullRequestRequest,
+                                  enqueueHandler: EnqueueHandler<List<PullRequestVO>>) {
+        serviceWrapper.pullRequests(pullRequestRequest, enqueueHandler)
     }
 
 }

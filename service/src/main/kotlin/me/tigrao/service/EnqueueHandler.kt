@@ -1,19 +1,17 @@
 package me.tigrao.service
 
-import android.arch.lifecycle.MutableLiveData
 import retrofit2.Response
 
-
-internal class EnqueueHandler<T>(private val valueObserver: MutableLiveData<T>,
-                        private val errorObserver: MutableLiveData<String>) {
+class EnqueueHandler<T>(private val success: (T) -> Unit,
+                        private val error: (String) -> Unit) {
 
     companion object {
         const val ERROR_MESSAGE = "Fail to load list"
     }
 
-    fun handler(response: Response<T>) =
-            if (response.isSuccessful) valueObserver.value = response.body()
-            else errorObserver.value = ERROR_MESSAGE
+    fun handler(response: Response<T>): Unit  =
+            if (response.isSuccessful) success(response.body()!!)
+            else error(ERROR_MESSAGE)
 
 }
 

@@ -1,6 +1,5 @@
 package me.tigrao.service
 
-import android.arch.lifecycle.MutableLiveData
 import com.nhaarman.mockito_kotlin.mock
 import com.nhaarman.mockito_kotlin.verify
 import org.jetbrains.spek.api.Spek
@@ -14,9 +13,9 @@ class EnqueueHandlerSpec : Spek({
 
 
     given("EnqueueHandler") {
-        val mock = mock<MutableLiveData<String>>()
-        val errorMock = mock<MutableLiveData<String>>()
-        val enqueueHandler = EnqueueHandler(mock, errorMock)
+        val success = mock<Function1<String, Unit>>()
+        val error = mock<Function1<String, Unit>>()
+        val enqueueHandler = EnqueueHandler(success, error)
         val mockResponse = mock<Response<String>>()
 
         on("handler a success enqueue") {
@@ -25,7 +24,7 @@ class EnqueueHandlerSpec : Spek({
             enqueueHandler.handler(mockResponse)
 
             it("should set his value on observer") {
-                verify(mock).value = "teste"
+                verify(success)("teste")
             }
         }
 
@@ -34,7 +33,7 @@ class EnqueueHandlerSpec : Spek({
             enqueueHandler.handler(mockResponse)
 
             it("should set the error on errorObserver") {
-                verify(errorMock).value = EnqueueHandler.ERROR_MESSAGE
+                verify(error)(EnqueueHandler.ERROR_MESSAGE)
             }
 
         }
