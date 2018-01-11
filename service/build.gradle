@@ -1,3 +1,4 @@
+//TODO:CHANGE PLUGIN TO JAVA AND KOTLIN PLUGINS
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
